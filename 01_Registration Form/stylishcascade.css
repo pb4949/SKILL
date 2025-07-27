@@ -1,0 +1,49 @@
+body
+{
+    color: hsl(0, 0%, 90%);
+    background-color: hsl(0, 0%, 10%);
+    font-family: Trebuchet MS;
+    font-size: 20px;
+    line-height: 40px;
+}
+textarea
+{
+    color: hsl(0, 0%, 90%);
+    background-color: hsl(0, 0%, 10%);
+    font-family: Trebuchet MS;
+    font-size: large;
+}
+a
+{
+    color: hsl(200, 100%, 50%);
+}
+input
+{
+    background-color: hsl(0, 0%, 15%);
+    color: hsl(200, 100%, 80%);
+    font-family: Consolas;
+    font-size: large;
+    border-radius: 10px;
+    padding: 5px;
+}
+input:hover
+{
+    background-color: hsla(0, 0%, 100%, 0.2);
+    transition-duration: 300ms;
+}
+button
+{
+    width: 200px;
+    height: 50px;
+    font-family: Trebuchet MS;
+    font-size: 125%;
+    border: hidden;
+    border-radius: 10px;
+}
+button:hover
+{
+    background-color: hsl(115, 85%, 35%);
+    color: white;
+    border-color: white;
+    transition-duration: 300ms;
+}
