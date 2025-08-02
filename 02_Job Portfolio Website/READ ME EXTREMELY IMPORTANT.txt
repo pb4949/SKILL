@@ -1,0 +1,1 @@
+Please open the page with the JetBrains Mono NL Font installed. The page looks significantly worse without it and was the original intended look for it. Download the .ttf file and let it be installed to your system, the page should have the appropiate font now.
