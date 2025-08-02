@@ -1,0 +1,43 @@
+body
+{
+    background-color: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 90%);
+    font-family: 'JetBrains Mono NL', 'Inter', 'Trebuchet MS';
+    font-size: 100%;
+    line-height: 35px;
+    zoom: 85%;
+    a
+    {
+        color: hsl(225, 75%, 60%);
+    }
+    a:hover
+    {
+        color: hsl(210, 60%, 90%);
+        transition-duration: 300ms;
+    }
+}
+
+.maincon
+{
+    background-color: hsl(0, 0%, 10%);
+    padding: 10px;
+    border: 2px solid hsl(210, 60%, 60%);
+    border-radius: 10px;
+    margin: 20px;
+}
+.maincon:hover
+{
+    background-color: hsl(0, 0%, 12%);
+    color: hsl(0, 0%, 100%);
+    font-size: 100.5%;
+    border-color: hsl(210, 100%, 50%);
+    border-radius: 5px;
+    transition-duration: 300ms;
+}
+
+.flexadj
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
