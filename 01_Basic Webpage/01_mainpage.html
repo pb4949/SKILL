@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Example Site</title>
+<link rel = "stylesheet" href = "0c_cssfile.css">
+</head>
+
+<body>
+
+<!--Intro-->
+<section>
+<h2>This is a basic webpage</h2>
+	<p>It is designed to showcase the HTML Features of Tables, Lists, Links, Images, Audio and Video.</p>
+</section>
+
+<!--Table-->
+<section>
+	<h2>Tables</h2>
+	<p>Example Table of Advantages and Disadvantages of OOP</p>
+	<table>
+	<colgroup>
+		<col span = "1" style = "background-color: hsl(140, 50%, 20%);">
+		<col span = "1" style = "background-color: hsl(0, 50%, 20%);">
+	</colgroup>
+	<tr>
+		<th>Advantages</th>
+		<th>Disadvantages</th>
+	</tr>
+	<tr>
+		<td>Avoids Redundancy</td>
+		<td>Might be slower than POP</td>
+	</tr>
+	<tr>
+		<td>Better for large scale projects</td>
+		<td>Over-using OOP features is very harmful</td>
+	</tr>
+	<tr style = "background-color: hsl(70, 50%, 20%);">
+		<td colspan="2">Inheritance is powerful, can lead to unpredictable ripple effects</td>
+	</tr>
+	</table>
+</section>
+
+<!--Lists-->
+<section>
+	<h2>Lists</h2>
+	<p>
+		Lists can be bulleted with &lt;ul&gt;, &lt;ol&gt; for ordered lists and &lt;dl&gt; paired with &lt;dd&gt; for descriptive lists
+		that are able to have indented items below themselves(subtask type layout). &lt;li&gt; element is used as individual elements 
+		 <!-- &lt; &gt; are Escape Sequences i.e. HTML Entities for `<` and `>` -->
+	</p>
+		This is a unordered list of advantages of Python	
+		<ul>
+			<li>Easy to Learn</li>
+			<li>Simple Syntax</li>
+			<li>Many In-built Libraries</li>
+		</ul>
+		This is a ordered list of languages learned so far
+		<ol>
+			<li>C</li>
+			<li>Python</li>
+			<li>C++</li>
+			<li>HTML/CSS</li>
+			<li>SQL</li>
+		</ol>
+		This is an descriptive list of items at a restaurant
+		<dl>
+			<li>Juices</li>
+				<dd>Orange</dd>
+				<dd>Apple</dd>
+				<dd>Grape</dd>
+		</dl>
+</section>
+
+<!--Links-->
+<section>
+	<h2>Links</h2>
+	<a href = "https://w3schools.com">W3 schools</a><br>	
+	<a href = "https://programiz.com">Programiz</a><br>
+	<a href = "https://en.wikipedia.org/wiki/Tree"><img src = "tree.png" style = "width: 200px; height: 133px;"></a>
+	&lArr; Click on the tree <!--HTML Entity for left arrow, open at the back with 2 sides-->
+</section>
+
+<!--Images-->
+<section>
+	<h2>Images, Audio and Video</h2>
+	<p>Here are a couple of images (The buttons MAY be unresponsive sometimes, press multiple times and wait if no effect is seen)</p>
+	<img src = "tree.png" style = "width: 200px; height: 133px">
+	<img src = "building.png" style = "width: 200px; height: 133px"><br>
+
+	<button onclick = "document.getElementById('testaudio').play()">Audio</button>
+	<audio id = "testaudio" src = "audio.mp3"></audio>
+	
+	<button onclick = "document.getElementById('testvid').play()">Video</button><br><br>
+	<video id = "testvid" src = "video (credits to NeetCode).mp4"></video><br>
+	Credits to <a href = "https://www.youtube.com/@NeetCode">NeetCode</a> for the example.<br>
+	Exact video used was the edited and cropped opening of <a href = "https://www.youtube.com/watch?v=rv_ZacJYRFA">this video</a> 
+</section>
+
+</body>
+</html>

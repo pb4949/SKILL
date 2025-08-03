@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <link rel = "stylesheet" href = "0c_cssfile.css">
+</head>
+
+<body>
+
+<h2>Registration Page</h2>
+<p>Hi! If you already have an account, click <a href = "fakelink">here</a>
+<form method = "get" action = "02_endpage.html" target = "_self">
+    <div style = "line-height: 40px;">
+
+        <label for = "name">Full Name: </label>
+        <input id = "name" name = "name" type = "text" style = "width: 600px"><br>
+        
+        <fieldset style = "margin-bottom: 20px;">
+        <legend>Account Info</legend>
+
+            <label for = "mail">Email: </label>
+            <input id = "mail" name = "mail" type = "email"><br>
+            <label for = "pwd">Password: </label>
+            <input id = "pwd" name = "pwd" type = "password"><br>
+            <label for = "cpwd">Confirm Password: </label>
+            <input id = "cpwd" name = "cpwd" type = "password"><br>
+
+        </fieldset>
+    </div>
+    <!--Personal Info-->
+    <fieldset style = "margin-bottom: 20px;">
+    <legend>Personal Info</legend>
+
+        <label>Gender</label><br>
+        <input id = "male" name = "gender" value = "male" type = "radio">
+        <label for = "male">Male</label><br>
+        <input id = "female" name = "gender" value = "female" type = "radio">
+        <label for = "female">Female</label><br><br>
+
+        <label for = "hobby">Hobbies</label><br>
+        <input id = "hiking" value = "hiking" name = "hobby" type = "checkbox">
+        <label for = "hiking">Hiking</label><br>
+        <input id = "reading" value = "reading" name = "hobby" type = "checkbox">
+        <label for = "reading">Reading</label><br>
+        <input id = "gaming" value = "gaming" name = "hobby" type = "checkbox">
+        <label for = "gaming">Gaming</label><br>
+        <input id = "sports" value = "sports" name = "hobby" type = "checkbox">
+        <label for = "sports">Sports</label><br>
+        <input id = "music" value = "music" name = "hobby" type = "checkbox">
+        <label for = "muisc">Music</label><br>
+        <input id = "cooking" value = "cooking" name = "hobby "type = "checkbox">
+        <label for = "cooking">Cooking</label><br>
+    </fieldset>
+            <!--Private Info-->
+    <div style = "line-height: 40px;">
+        <fieldset>
+            <legend>Private Info</legend>
+            
+            <label for = "dob">Date of Birth: </label>
+            <input id = "dob" value = "dob" name = "dob" type = "date"><br>
+
+            <label for = "state">Country/Region: </label>
+            <select id = "state">
+
+                <option value = "northamerica">Canada/US</option>
+                <option value = "latinamerica">Latin America</option>
+                <option value = "caribbean">Caribbean</option>
+                <option value = "southamerica">South America</option>
+                <option value = "northafrica">North Africa</option>
+                <option value = "subsaharanafrica">Sub-Saharan Africa</option>
+                <option value = "southernafrica">Southern Africa</option>
+                <option value = "middleeast">Middle East</option>
+                <option value = "europe">Europe</option>
+                <option value = "russia">Russia</option>
+                <option value = "centralasia">Central Asia</option>
+                <option value = "southasia">South Asia</option>
+                <option value = "eastasia">East Asia</option>
+                <option value = "southeastasia">South-East Asia</option>
+                <option value = "oceania">Oceania</option>
+                <option value = "none" selected>---</option>
+
+            </select>
+        </fieldset>    
+    </div><br>
+
+    <div style = "line-height: 40px;">
+
+        <label for = "pfp">Profile Photo: </label>
+        <input id = "pfp" type = "file"><br>
+
+        <textarea rows = "10" cols = "50"><&#33--Add Comments Here--></textarea><br>
+
+        <button onclick = "alert('Submitting Form... Redirecting to '); submit()" style = "width: 300px; height: 50px">Register</button>
+
+    </div>
+    
+</form>
+
+
+</body>
+</html>

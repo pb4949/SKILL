@@ -1,0 +1,64 @@
+body
+{
+    background-color: hsl(210, 15%, 10%);
+    color: hsl(0, 0%, 90%);
+    font-family: 'Trebuchet MS', 'Verdana', 'Calibri', 'JetBrains Mono NL';
+    font-size: 120%;
+    margin: 40px;
+}
+input, select
+{
+    background-color: hsl(0, 0%, 10%);
+    color: hsl(210, 10%, 90%);
+    border: 2px solid hsl(0, 0%, 20%);
+    border-radius: 10px;
+    font-family: 'Trebuchet MS', 'Consolas';
+    font-size: 105%;
+}
+input:hover, select:hover
+{
+    background-color: hsl(210, 30%, 10%);
+    border: 2px dashed hsl(0, 0%, 90%);
+    border-radius: 6px;
+    transition-duration: 300ms;
+}
+input:focus, select:focus
+{
+    border: 2px solid hsl(0, 0%, 90%);
+    border-radius: 4px;
+    transition-duration: 300ms;
+}
+fieldset
+{
+    padding: 20px;
+}
+legend
+{
+    font-size: 150%;
+}
+textarea
+{
+    background-color: hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 90%);
+}
+button
+{
+    background-color: hsl(0, 0%, 90%);
+    color: hsl(0, 0%, 10%);
+    border: 2px solid hsl(140, 80%, 35%);
+    border-radius: 15px;
+    font-family: 'Trebuchet MS';
+    font-size: 150%;
+}
+button:hover
+{
+    background: hsl(140, 80%, 35%);
+    color: hsl(0, 0%, 90%);
+    border: 2px solid hsl(0, 0%, 90%);
+    border-radius: 10px;
+    transition-duration: 300ms;
+}
+a
+{
+    color: hsl(210, 80%, 75%);
+}
