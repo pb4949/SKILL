@@ -1,19 +1,26 @@
+html
+{
+    scroll-behavior: smooth;
+}
 body
 {
-    background-color: hsl(0, 0%, 8%);
     color: hsl(0, 0%, 90%);
-    font-family: 'JetBrains Mono NL', 'Inter', 'Trebuchet MS';
+    background-image: url('autumn.jpg');
+    background-position: center;
+    background-size:cover;
+    background-attachment: fixed;
+    font-family: 'JetBrains Mono NL', 'Trebuchet MS';
     font-size: 100%;
     line-height: 35px;
-    zoom: 85%;
+    zoom: 80%;
     a
     {
-        color: hsl(225, 75%, 60%);
+        color: hsl(25, 80%, 60%);
     }
     a:hover
     {
-        color: hsl(210, 60%, 90%);
-        transition-duration: 300ms;
+        color: hsl(30, 100%, 80%);
+        transition-duration: 300ms; 
     }
 }
 
@@ -21,16 +28,16 @@ body
 {
     background-color: hsl(0, 0%, 10%);
     padding: 10px;
-    border: 2px solid hsl(210, 60%, 60%);
+    border: 5px groove hsl(25, 60%, 60%);
     border-radius: 10px;
     margin: 20px;
 }
 .maincon:hover
 {
-    background-color: hsl(0, 0%, 12%);
-    color: hsl(0, 0%, 100%);
+    background-color: hsl(0, 0%, 11.5%);
+    color: hsl(0, 0%, 95%);
     font-size: 100.5%;
-    border-color: hsl(210, 100%, 50%);
+    border-color: hsl(25, 100%, 50%);
     border-radius: 5px;
     transition-duration: 300ms;
 }
