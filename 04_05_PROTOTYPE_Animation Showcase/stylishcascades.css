@@ -1,0 +1,73 @@
+body
+{
+    background-color: hsl(0, 0%, 10%);
+    color: hsl(0, 0%, 90%);
+    font-family: 'Trebuchet MS', 'JetBrains Mono NL', 'Calibri';
+}
+section
+{
+    border: 4px groove hsl(135, 0%, 70%);
+    margin: 40px;
+    padding: 20px;
+}
+section:hover
+{
+    background-color: hsl(0, 0%, 12%);
+    transition-duration: 300ms;
+}
+table, th, td
+{
+    border: 1px solid hsl(0, 0%, 85%);
+    border-collapse: collapse;
+    padding: 10px;
+    th
+    {
+        background-color: hsl(210, 70%, 20%);
+    }
+}
+a
+{
+    color: hsl(210, 70%, 70%);
+}
+a:hover
+{
+    color: hsl(210, 100%, 50%);
+    transition-duration: 300ms;
+}
+img
+{
+    margin: 20px 0px;
+}
+button
+{
+    border: 2px solid hsl(0, 0%, 15%);
+    border-radius: 3px;
+    height: 50px;
+    width: 100px;
+    font-family: 'Trebuchet MS';
+    font-size: 140%;
+}
+button:hover
+{
+    background-color: hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 90%);
+    transition-duration: 300ms;
+    border: 2px solid hsl(0, 0%, 90%);
+    border-radius: 20px;
+}
+
+@keyframes rainbowanimation 
+{
+  0% {background-color: red;}
+  14% {background-color: orange;}
+  28% {background-color: yellow;}
+  42% {background-color: green;}
+  56% {background-color: blue;}
+  70% {background-color: rgb(41, 0, 130);}
+  84% {background-color: rgb(95, 0, 135);}
+  100% {background-color: red};
+}
+
+.test {
+  animation: rainbowanimation 10s infinite;
+}
