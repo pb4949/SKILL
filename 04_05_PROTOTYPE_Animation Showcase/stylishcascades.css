@@ -68,6 +68,7 @@ button:hover
   100% {background-color: red};
 }
 
-.test {
+.test 
+{
   animation: rainbowanimation 10s infinite;
 }
