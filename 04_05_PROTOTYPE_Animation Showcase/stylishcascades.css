@@ -7,7 +7,6 @@ body
 section
 {
     border: 4px groove hsl(135, 0%, 70%);
-    margin: 40px;
     padding: 20px;
 }
 section:hover
@@ -58,17 +57,27 @@ button:hover
 
 @keyframes rainbowanimation 
 {
-  0% {background-color: red;}
-  14% {background-color: orange;}
-  28% {background-color: yellow;}
-  42% {background-color: green;}
-  56% {background-color: blue;}
-  70% {background-color: rgb(41, 0, 130);}
-  84% {background-color: rgb(95, 0, 135);}
-  100% {background-color: red};
+  0% {background-color: hsl(0, 100%, 20%)}
+  14% {background-color: hsl(36, 100%, 20%);}
+  28% {background-color: hsl(73, 100%, 20%)}
+  42% {background-color: hsl(109, 100%, 20%)}
+  56% {background-color: hsl(200, 100%, 20%);} /*exception cuz green has a huge spectrum for the human eye*/
+  70% {background-color: hsl(236, 100%, 20%);}
+  84% {background-color: hsl(273, 100%, 20%);}
+  100% {background-color: hsl(0, 100%, 20%)};
+  /*14% interval cuz 100/7 and 36.4% interval cuz 255/7)*/
 }
 
 .test 
 {
   animation: rainbowanimation 10s infinite;
+}
+
+.gridcon
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; /*fraction*/
+  grid-auto-rows: 200px;
+  grid-auto-columns: 150px;
+  gap: 50px;
 }
