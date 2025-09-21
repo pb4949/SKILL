@@ -1,11 +1,6 @@
-let a
-let b
-let ch
-
-a = Number(prompt("Enter number 1: "))
-b = Number(prompt("Enter number 2: "))
-
-ch = Number(prompt("1 2 3 4 for + - * /"))
+let a = Number(prompt("Enter number 1: "))
+let b = Number(prompt("Enter number 2: "))
+let ch = Number(prompt("1 2 3 4 for + - * /: "))
 
 switch (ch)
 {
