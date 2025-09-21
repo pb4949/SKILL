@@ -1,8 +1,5 @@
-let user
-let age
-
-user = prompt("Full Legal Government Issued Name: ")
-age = Number(prompt("Enter Age: "))
+let user prompt("Full Legal Government Issued Name: ")
+let age = Number(prompt("Enter Age: "))
 if (age >= 18)
     console.log("Eligible to vote")
 else
