@@ -1,5 +1,4 @@
-let n
-n = Number(prompt("Enter Number: "))
+let n = Number(prompt("Enter Number: "))
 
 if (n % 1 != 0)
     console.log("Number is a decimal, doesn't apply")
