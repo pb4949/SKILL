@@ -1,7 +1,6 @@
-let day
-day = Number(prompt("Enter Number (1-7): "))
+let dayOfWeek = Number(prompt("Enter Number (1-7): "))
 
-switch(day)
+switch(dayOfWeek)
 {
     case 1:
         console.log("Monday")
