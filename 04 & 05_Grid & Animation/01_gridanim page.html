@@ -1,184 +1,84 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Example Site</title>
-  <style>
-body
-{
-    background-color: hsl(0, 0%, 10%);
-    color: hsl(0, 0%, 90%);
-    font-family: 'Trebuchet MS', 'JetBrains Mono NL', 'Calibri';
-}
-section
-{
-    border: 4px groove hsl(135, 0%, 70%);
-    padding: 20px;
-}
-section:hover
-{
-    background-color: hsl(0, 0%, 12%);
-    transition-duration: 300ms;
-}
-table, th, td
-{
-    border: 1px solid hsl(0, 0%, 85%);
-    border-collapse: collapse;
-    padding: 10px;
-    th
-    {
-        background-color: hsl(210, 70%, 20%);
-    }
-}
-a
-{
-    color: hsl(210, 70%, 70%);
-}
-a:hover
-{
-    color: hsl(210, 100%, 50%);
-    transition-duration: 300ms;
-}
-img
-{
-    margin: 20px 0px;
-}
-button
-{
-    border: 2px solid hsl(0, 0%, 15%);
-    border-radius: 3px;
-    height: 50px;
-    width: 100px;
-    font-family: 'Trebuchet MS';
-    font-size: 140%;
-}
-button:hover
-{
-    background-color: hsl(0, 0%, 20%);
-    color: hsl(0, 0%, 90%);
-    transition-duration: 300ms;
-    border: 2px solid hsl(0, 0%, 90%);
-    border-radius: 20px;
-}
-
-@keyframes rgb-anim
-{
-0% {background-color: hsl(0, 100%, 20%)}
-10% {background-color: hsl(36, 100%, 20%)}
-30% {background-color: hsl(108, 100%, 20%)}
-40% {background-color: hsl(144, 100%, 20%)}
-50% {background-color: hsl(180, 100%, 20%)}
-70% {background-color: hsl(252, 100%, 20%)}
-80% {background-color: hsl(288, 100%, 20%)}
-90% {background-color: hsl(324, 100%, 20%)}
-100% {background-color: hsl(360, 100%, 20%)}
-}
-@keyframes rgb-anim-text
-{
-0% {color: hsl(0, 100%, 20%)}
-10% {color: hsl(36, 100%, 20%)}
-30% {color: hsl(108, 100%, 20%)}
-40% {color: hsl(144, 100%, 20%)}
-50% {color: hsl(180, 100%, 20%)}
-70% {color: hsl(252, 100%, 20%)}
-80% {color: hsl(288, 100%, 20%)}
-90% {color: hsl(324, 100%, 20%)}
-100% {color: hsl(360, 100%, 20%)}
-}
-
-.rgb-lighting
-{
-  animation: rgb-anim 10s infinite;
-}
-.rgb-lighting-text
-{
-    animation: rgb-anim-text 10s infinite;
-}
-
-.gridcon
-{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr; /*fraction*/
-  grid-auto-rows: 300px;
-  gap: 50px;
-}
-  </style>
+	<title>Example Site</title>
+	<link rel = "stylesheet" href ="0c_cssfile.css">
 </head>
 
 <body>
 
 <div class="gridcon">
 
-  <section class="rgb-lighting" style = "grid-row: 1 /span 1; grid-column: 1 /span 3">
-    <h2>This is a basic webpage</h2>
-	<p>It is designed to showcase the HTML Features of Tables, Lists, Links, Images, Audio and Video.</p><br>
-    <p><b>This box should be RGB due to CSS animations</b></p>
-  </section>
+	<section class="rgb-lighting" style = "grid-row: 1; grid-column: 1 /span 3">
+		<h2>This was the basic webpage from <b>Experiment 1</b></h2>
+		<p>Now it showcases different RGB animations, text font animations and grid styling</p><br>
+		<p><b>This box should be RGB due to CSS animations</b></p>
+	</section>
 
-  <section style = "grid-row: 1; grid-column: 4">
-	<table>
-	<colgroup>
-		<col span = "1" style = "background-color: hsl(140, 50%, 20%);">
-		<col span = "1" style = "background-color: hsl(0, 50%, 20%);">
-	</colgroup>
-	<tr>
-		<th>Advantages</th>
-		<th>Disadvantages</th>
-	</tr>
-	<tr>
-		<td>Avoids Redundancy</td>
-		<td>Might be slower than POP</td>
-	</tr>
-	<tr>
-		<td>Better for large scale projects</td>
-		<td>Over-using OOP features is very harmful</td>
-	</tr>
-	<tr style = "background-color: hsl(70, 50%, 20%);">
-		<td colspan="2">Inheritance is powerful, can lead to unpredictable ripple effects</td>
-	</tr>
-	</table>
-  </section>
-  
-  <section style = "grid-row: 2 /span 2; grid-column: 1;">
-    <h2>Lists</h2>
-    <p>
-		Lists can be bulleted with &lt;ul&gt;, &lt;ol&gt; for ordered lists and &lt;dl&gt; paired with &lt;dd&gt; for descriptive lists
-		that are able to have indented items below themselves(subtask type layout). &lt;li&gt; element is used as individual elements 
-		 <!-- &lt; &gt; are Escape Sequences i.e. HTML 'Entities' or escape sequences for `<` and `>` -->
-	</p>
-		This is a unordered list of advantages of Python	
-		<ul>
-			<li>Easy to Learn</li>
-			<li>Simple Syntax</li>
-			<li>Many In-built Libraries</li>
-		</ul>
-		This is a ordered list of languages learned so far
-		<ol>
-			<li>C</li>
-			<li>Python</li>
-			<li>C++</li>
-			<li>HTML/CSS</li>
-			<li>SQL</li>
-            <li>JS</li>
-		</ol>
-  </section>
-  
-  <section style = "grid-row: 2 /span 1; grid-column: 2 /span 3">
-    <h2>Links</h2>
-	<a href = "https://w3schools.com">W3 schools</a><br>	
-	<a href = "https://programiz.com">Programiz</a><br>
-	<a href = "https://en.wikipedia.org/wiki/Tree"><img src = "tree.png" style = "width: 200px; height: 133px;"></a>
-	&lArr; Click on the tree <!--HTML Entity for left arrow, open at the back with 2 sides-->
-  </section>
+	<section style = "grid-row: 1; grid-column: 4">
+		<table>
+		<colgroup>
+			<col span = "1" style = "background-color: hsl(140, 50%, 20%);">
+			<col span = "1" style = "background-color: hsl(0, 50%, 20%);">
+		</colgroup>
+		<tr>
+			<th>Advantages</th>
+			<th>Disadvantages</th>
+		</tr>
+		<tr>
+			<td>Avoids Redundancy</td>
+			<td>Might be slower than POP</td>
+		</tr>
+		<tr>
+			<td>Better for large scale projects</td>
+			<td>Over-using OOP features is very harmful</td>
+		</tr>
+		<tr style = "background-color: hsl(70, 50%, 20%);">
+			<td colspan="2">Inheritance is powerful, can lead to unpredictable ripple effects</td>
+		</tr>
+		</table>
+	</section>
+	
+	<section style = "grid-row: 2 /span 2; grid-column: 1;">
+		<h2>Lists</h2>
+		<p>
+			Lists can be bulleted with &lt;ul&gt;, &lt;ol&gt; for ordered lists and &lt;dl&gt; paired with &lt;dd&gt; for descriptive lists
+			that are able to have indented items below themselves(subtask type layout). &lt;li&gt; element is used as individual elements 
+			<!-- &lt; &gt; are Escape Sequences i.e. HTML 'Entities' or escape sequences for `<` and `>` -->
+		</p>
+			This is a unordered list of advantages of Python	
+			<ul>
+				<li>Easy to Learn</li>
+				<li>Simple Syntax</li>
+				<li>Many In-built Libraries</li>
+			</ul>
+			This is a ordered list of languages learned so far
+			<ol>
+				<li>C</li>
+				<li>Python</li>
+				<li>C++</li>
+				<li>HTML/CSS</li>
+				<li>SQL</li>
+				<li>JS</li>
+			</ol>
+	</section>
+	<section style = "grid-row: 2; grid-column: 2 /span 3">
+		<h2>Links</h2>
+		<a href = "https://w3schools.com">W3 schools</a><br>	
+		<a href = "https://programiz.com">Programiz</a><br>
+		<a href=  "https://github.com/pb4949">My Github</a>
+		<i>Links give another animation keyframes effect</i>
+	</section>
 
-  <section style = "grid-row: 3; grid-column: 2">
-    <h2>Images, Audio and Video</h2>
-	<p>--Media Doesn't work here--</p>  
-  </section>
-  
-  <section style = "grid-row: 3; grid-column: 3 /span 2">
-    <h2 class = "rgb-lighting-text">RGB Text</h2>
-    <p class = "rgb-lighting-text">RGB Text works too with it's own custom class</p>
-  </section>
+	<section class = "rgb-lighting-text-hovermode" style = "grid-row: 3; grid-column: 2">
+		<h2>RGB Hover Text</h2>
+		<p>Hovering over here will trigger fast cycling RGB text</p>  
+	</section>
+	
+	<section style = "grid-row: 3; grid-column: 3 /span 2">
+		<h2 class = "rgb-lighting-text">RGB Text</h2>
+		<p class = "rgb-lighting-text">RGB Text works too with it's own custom class</p>
+	</section>
 </div>
 
 </body>
