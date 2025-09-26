@@ -10,3 +10,7 @@ for (i = 0; i < 10; i++)
         min = i;
     console.log(ary[i])
 }
+console.log("\nMax")
+console.log(ary[max])
+console.log("Min")
+console.log(ary[min])
